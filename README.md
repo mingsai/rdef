@@ -1,7 +1,7 @@
 rdef
 ====
 
-rdef is an MacOSX command line utility that parses all MacOSX dictionaries for a Chinese character or phrase and outputs the corresponding pinyin.
+rdef is an MacOSX command line utility that parses all MacOSX dictionaries for a Chinese character or phrase and outputs the corresponding definition to the Terminal. 
 
 To use - copy/install executable into /usr/local/bin and execute from a Terminal window with the following syntax:
 
@@ -13,6 +13,13 @@ rdef 我
 
 returns
 
-wǒ
+Definition of <我>: | wǒ |
+I
+me
+my
+
+Use- Case:
+
+Output from this command can be piped through perl, sed, awk or your other favorite stream utility to parse out either the definition or the pinyin associated with the Chinese input.
 
 
