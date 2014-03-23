@@ -10,6 +10,7 @@
 		1900CF7618DDFFDE00413B77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1900CF7518DDFFDE00413B77 /* Foundation.framework */; };
 		1900CF7918DDFFDE00413B77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1900CF7818DDFFDE00413B77 /* main.m */; };
 		1900CF7D18DDFFDE00413B77 /* rdef.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1900CF7C18DDFFDE00413B77 /* rdef.1 */; };
+		1900CF8418DE003B00413B77 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1900CF8318DE003B00413B77 /* CoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		1900CF7818DDFFDE00413B77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1900CF7B18DDFFDE00413B77 /* rdef-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rdef-Prefix.pch"; sourceTree = "<group>"; };
 		1900CF7C18DDFFDE00413B77 /* rdef.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = rdef.1; sourceTree = "<group>"; };
+		1900CF8318DE003B00413B77 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1900CF8418DE003B00413B77 /* CoreServices.framework in Frameworks */,
 				1900CF7618DDFFDE00413B77 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +68,7 @@
 		1900CF7418DDFFDE00413B77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1900CF8318DE003B00413B77 /* CoreServices.framework */,
 				1900CF7518DDFFDE00413B77 /* Foundation.framework */,
 			);
 			name = Frameworks;

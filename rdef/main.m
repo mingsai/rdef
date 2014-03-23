@@ -13,8 +13,25 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        if(argc < 2)
+        {
+            printf("Usage: rdef <word to define>");
+
+                   return -1;
+                   }
+
+                   NSString * search =
+                   [NSString stringWithCString: argv[1] encoding: NSUTF8StringEncoding];
+
+                   CFStringRef def =
+                   DCSCopyTextDefinition(NULL,
+                                         (__bridge CFStringRef)search,
+                                         CFRangeMake(0, [search length]));
+                   
+                   NSString * output = 
+                   [NSString stringWithFormat: @"Definition of <%@>: %@", search, (__bridge NSString *)def];
+                    
+                    printf("%s", [output UTF8String]);
         
     }
     return 0;
