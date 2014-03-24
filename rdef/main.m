@@ -33,7 +33,6 @@ int main(int argc, const char * argv[])
 
         printf("%s", [output UTF8String]);
 
-        CFRelease(def);
 
 
     }
